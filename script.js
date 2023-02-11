@@ -1,8 +1,8 @@
 
 let query = window.location.search.split('?query=')
 
-if (query[1] < 2) {
-    alert("Enter a Valid username")
+if (query[1].length == 2) {
+    query = 'arkalsekar'
 }
 
 const url = String("https://api.github.com/users/" + query[1]);
